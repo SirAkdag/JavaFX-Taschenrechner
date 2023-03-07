@@ -31,18 +31,7 @@ public class FXMLController {
                 currentNumber = 0;
                 txt_result.setText(firstNumber + operation);
             }
-        }
-    }
 
-    @FXML
-    private void nummerKlick(ActionEvent event) {
-        String value = ((Button) event.getSource()).getText();
-        if (operation.equals("")) {
-            currentNumber = Integer.parseInt((currentNumber + value));
-            txt_result.setText(String.valueOf(firstNumber + currentNumber));
-        } else {
-            currentNumber = Integer.parseInt(currentNumber + value);
-            txt_result.setText(firstNumber + operation + currentNumber);
 
         }
 
@@ -79,6 +68,21 @@ public class FXMLController {
 
     }
 
+
+    @FXML
+    private void nummerKlick(ActionEvent event) {
+        String value = ((Button) event.getSource()).getText();
+        if (operation.equals("")) {
+            currentNumber = (int) Long.parseLong((currentNumber + value));
+            txt_result.setText(String.valueOf(firstNumber + currentNumber));
+        } else {
+            currentNumber = Integer.parseInt(currentNumber + value);
+            txt_result.setText(firstNumber + operation + currentNumber);
+
+        }
+
+
+    }
 
     @FXML
     private void reset(ActionEvent event) {
