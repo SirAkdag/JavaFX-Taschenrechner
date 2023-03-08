@@ -23,6 +23,9 @@ public class FXMLController {
     //für die Bühne
     private Stage meineStage;
 
+    //Hier wurden nur 3 Methoden erstellt und
+    //die Methoden Ausschneiden, Kopieren und Einfügen hinzugefügt.
+    //und werden diese Methoden zu den erstellten MenüItems und Schaltflächen hinzugefügt.
     @FXML
     private void copyKlick() {
         editor.copy();
