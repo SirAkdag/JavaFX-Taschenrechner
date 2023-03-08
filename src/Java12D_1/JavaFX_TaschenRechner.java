@@ -15,9 +15,6 @@ public class JavaFX_TaschenRechner extends Application {
     meineStage.setScene(meineScene);
     meineStage.setResizable(false);
     meineStage.show();
-
-
-
     }
 
     public static void main(String[] args) {

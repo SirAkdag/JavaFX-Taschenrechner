@@ -5,7 +5,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-
 public class FXMLController {
     @FXML
     private TextField txt_result;
@@ -40,10 +39,7 @@ public class FXMLController {
                 currentNumber = 0;
                 txt_result.setText(firstNumber + operation);
             }
-
-
         }
-
     }
 
     //Hier wurden mit der Berechnen-Methode ausgewählte mathematische Operationen verwendet.
@@ -58,12 +54,10 @@ public class FXMLController {
             result = firstNumber - currentNumber;
             txt_result.setText(firstNumber + operation + currentNumber + " = " + result);
 
-
         }
         if (operation.equals("*")) {
             result = firstNumber * currentNumber;
             txt_result.setText(firstNumber + operation + currentNumber + " = " + result);
-
 
         }
         if (operation.equals("/")) {
@@ -73,8 +67,6 @@ public class FXMLController {
             } else
                 txt_result.setText("Nicht definiert!");
         }
-
-
     }
 
     //Hier wird die Methode nummerKlick verwendet,
